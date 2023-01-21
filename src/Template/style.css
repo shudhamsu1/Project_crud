@@ -1,0 +1,82 @@
+.content{
+
+    display: flex;
+    flex-direction: column;
+    padding-left: 2%
+}
+
+
+form{
+    display: grid;
+    grid-template-columns: 200px 100px;
+    row-gap: 15px;
+    column-gap:15px;
+}
+
+.loginForm{
+    padding: 5% 10%;
+    display: grid;
+    grid-template-columns: 200px 200px;
+    row-gap: 15px;
+    column-gap:15px;
+    color:black;
+}
+
+form:hover{
+    cursor: pointer;
+}
+
+form input{
+    width: 200px;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;   /* Height of the footer */
+    background: #6cf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+}
+
+
+.genderForm {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/**{*/
+/*    margin: 0;*/
+/*    padding:0;*/
+
+/*}*/
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+#userTable{
+    /*border: 1px solid black;*/
+}
+
+.admintr{
+    /*border: 1px solid black;*/
+
+}
+
+.admintd{
+    border: 1px solid black;
+    padding: 10px 10px;
+}
+
+.adminth{
+    border: 1px solid black;
+    padding: 10px 10px;
+}
