@@ -6,7 +6,6 @@
 
 
   <table id="userTable">
-<!--    <tr>-->
 <!--      <th> ID </th>-->
 <!--      <th> First Name</th>-->
 <!--      <th> Last Name</th>-->
@@ -37,8 +36,8 @@
       </tr>
 
     <?php
-      $dbConnect = new Database();
-      $users = $dbConnect->findall();
+//      $dbConnect = new Database();
+//      $users = $dbConnect->findall();
 //      echo "<pre>";
 //      print_r($users);
 //      echo "</pre>"
