@@ -1,5 +1,13 @@
 <?php
-echo $user['id']; ?>
+
+
+//if($user){
+//    echo "updated sucessfully";
+//}else{
+//    echo "not updated";
+//    exit();
+//}
+?>
 
 <form method="POST" action="">
 
@@ -32,7 +40,6 @@ echo $user['id']; ?>
     <input type="submit" value="Update" name="Update" class="register btn btn-primary"">
   </div>
 
-  <a href = "<?php echo 'index.php?module=Login' ?>"> Home </a>
 
 </form>
 
