@@ -37,9 +37,11 @@ class Database
     }
   }
 
-  public function deleteRow($sql)
+  public function deleteRow($id)
   {
-
+    $sql = 'Delete from users where id=number($id)';
+    $result = $this->connection->query($sql);
+    return $result;
   }
 
 

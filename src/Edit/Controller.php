@@ -5,10 +5,13 @@ class Controller
 {
   public function index(){
 
-    $userSession = new Session();
-    $userId= $userSession->getUserID();
+//    $userSession = new Session();
+//    $userId= $userSession->getUserID();
 
-    echo $userId;
+    $id = $_GET['id'];
+
+    $model = new Model();
+    $user = $model->getUserById($id);
 
     $view = 'src/Edit/view.html.php';
     include 'src/Template/template.php';

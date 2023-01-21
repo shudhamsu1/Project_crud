@@ -29,8 +29,17 @@ require 'vendor/autoload.php';
 
 
 $module = $_GET['module'] ?? 'Login';
-
+// if (isset($_GET['module'])){
+//  $module = $_GET['module'];
+//  if ($module== 'delete' || $module ="view"){
+//    $controllerClass = "Php\\Project\\" . "Admin" . '\\ $module'. ".php";
+//    exit;
+//  }
+//} else {
+//   $module = 'login';
+// }
 $controllerClass = "Php\\Project\\" . $module . '\\Controller';
+
 
 if (!class_exists($controllerClass)) {
   echo 'Class does not exist';

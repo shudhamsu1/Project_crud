@@ -8,7 +8,7 @@
 
 form{
     display: grid;
-    grid-template-columns: 200px 100px;
+    grid-template-columns: 200px 300px;
     row-gap: 15px;
     column-gap:15px;
 }
@@ -16,7 +16,7 @@ form{
 .loginForm{
     padding: 5% 10%;
     display: grid;
-    grid-template-columns: 200px 200px;
+    grid-template-columns: 200px 300px;
     row-gap: 15px;
     column-gap:15px;
     color:black;
@@ -48,6 +48,15 @@ form input{
     flex-direction: column;
 }
 
+.gender{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.register{
+    margin-top: 20px;
+}
 
 
 /**{*/

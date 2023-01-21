@@ -15,16 +15,23 @@
     <input name="phone" type="text">
   <label>Gender:</label>
 <div class="genderForm">
-  <input type="radio" id="male" name="gender" value="M">
+    <div class="gender">
+    <input type="radio" id="male" name="gender" value="M">
     <label for="male">Male</label>
+    </div>
 
-  <input type="radio" id="female" name="gender" value="F">
-    <label for="female">Female</label>
+    <div class="gender">
+        <input type="radio" id="female" name="gender" value="F">
+        <label for="female">Female</label>
+    </div>
 
-  <input type="radio" id="notsay" name="gender" value="Prefer Not to say">
-    <label for="notsay">Prefer Not to Say</label>
+    <div class="gender">
+        <input type="radio" id="notsay" name="gender" value="Prefer Not to say">
 
-  <input type="submit" value="Register" name="Register">
+        <label for="notsay">Non-Binary</label>
+    </div>
+
+  <input type="submit" value="Register" name="Register" class="register btn btn-primary">
 </div>
 
   <a href = "<?php echo 'index.php?module=Login' ?>"> Home </a>
