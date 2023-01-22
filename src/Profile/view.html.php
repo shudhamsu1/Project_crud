@@ -6,7 +6,7 @@
     </div >
 
     <div id="profileBody" class="card " style="width: 18rem;  ">
-        <img src="<?php echo $user['profile_image']; ?>" class="card-img-top" alt="...">
+        <img src="src/PictureUpload/image/<?php echo $user['profile_image']; ?>" class="card-img-top" alt="...">
 
         <a href='index.php?module=PictureUpload&id=<?php echo $user['id'];?> ' class="card-link">Upload image</a>
 
@@ -24,6 +24,8 @@
             <a href="#" class="card-link">Another link</a>
         </div>
     </div>
+<a href = "<?php echo 'index.php?module=Login' ?> "  class="btn btn-primary btn-lg " id="logoutBtn">Logout</a>
 </div>
 
-<a href = "<?php echo 'index.php?module=Login' ?>">Logout</a>
+
+

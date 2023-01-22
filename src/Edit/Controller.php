@@ -9,7 +9,7 @@ class Controller
 //    $userId= $userSession->getUserID();
 
     $id = $_GET['id'];
-    echo $id;
+//    echo $id;
     if(isset($_POST['Update'])){
       $data = $_POST;
 

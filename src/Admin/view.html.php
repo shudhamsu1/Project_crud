@@ -1,23 +1,9 @@
 <?php use Php\Project\Includes\Database; ?>
-
-<?php use Php\Project\Includes\function;?>
 <div id="page">
   <h2>List of users</h2>
 
 
   <table id="userTable">
-<!--      <th> ID </th>-->
-<!--      <th> First Name</th>-->
-<!--      <th> Last Name</th>-->
-<!--      <th> Email</th>-->
-<!--      <th> Password</th>-->
-<!--      <th> Phone Number</th>-->
-<!--      <th> Profile image</th>-->
-<!--      <th> Role</th>-->
-<!--      <th> Gender</th>-->
-<!--      <th> Created</th>-->
-<!--      <th> Last Updated</th>-->
-<!--    </tr>-->
       <tr class="admintr">
           <th class='adminth' >ID</th>
           <th class='adminth' >First Name</th>
@@ -77,7 +63,7 @@
             <td class='admintd' ><?php echo $adminuser['email']; ?></td>
             <td class='admintd' ><?php echo $adminuser['password']; ?></td>
             <td class='admintd' ><?php echo $adminuser['phone']; ?></td>
-            <td class='admintd' ><?php echo $adminuser['profile_image']; ?></td>
+            <td class='admintd' > <img src="src/PictureUpload/image/<?php echo $adminuser['profile_image']; ?>" id="adminImg"> </td>
             <td class='admintd' ><?php echo $adminuser['role']; ?></td>
             <td class='admintd' ><?php echo $adminuser['gender']; ?></td>
             <td class='admintd' ><?php echo $adminuser['created_at']; ?></td>

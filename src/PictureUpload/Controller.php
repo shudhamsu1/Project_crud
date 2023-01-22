@@ -7,7 +7,7 @@ class Controller
   public function index(){
 
     $id = $_GET['id'];
-    echo $id;
+//    echo $id;
 
     if (isset($_POST['uploadfile'])) {
 
@@ -17,13 +17,10 @@ class Controller
 
       $folder = "src/PictureUpload/image/".$filename;
       $model = new Model();
-
+      $users = $model->addPictureById($id,$filename);
 
       if (move_uploaded_file($tempname, $folder)) {
-
-        $users = $model->addPictureById($id,$filename);
-
-//        header('index.php?module=Profile&id=$id') ;
+        header('Location:index.php?module=Profile&id=$id') ;
 
 
       }else{
@@ -32,10 +29,7 @@ class Controller
 
       }
 
-      }
-
-
-    else {
+      } else {
           $view = 'src/PictureUpload/view.html.php';
           include 'src/Template/template.php';
         }

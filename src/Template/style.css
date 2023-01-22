@@ -14,12 +14,21 @@ form{
 }
 
 .loginForm{
-    padding: 5% 10%;
+    padding: 10% 20%;
     display: grid;
     grid-template-columns: 200px 300px;
     row-gap: 15px;
     column-gap:15px;
     color:black;
+}
+
+#logoutBtn{
+    margin: 2% 5%;
+}
+
+.logo{
+    height: 120px;
+    width: 300px;
 }
 
 form:hover{
@@ -29,6 +38,11 @@ form:hover{
 form input{
     width: 200px;
 }
+
+/*#loginPost{*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*}*/
 
 .footer{
     position: fixed;
@@ -69,19 +83,30 @@ body{
     flex-direction: column;
     min-height: 100vh;
 }
-
-
-#userTable{
-    /*border: 1px solid black;*/
+#adminImg{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
 }
 
+
 .admintr{
-    /*border: 1px solid black;*/
+    border: 1px solid lightcyan;
+    -webkit-box-shadow: 4px 11px 9px -8px rgba(0,0,0,0.39);
+    box-shadow: 4px 11px 9px -8px rgba(0,0,0,0.39);
+}
+
+.admintr:hover{
+    font-size: large;
+}
+
+.admintd:hover{
+    cursor: pointer;
 
 }
 
 .admintd{
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     padding: 10px 10px;
 }
 
@@ -90,6 +115,9 @@ body{
     padding: 10px 10px;
 }
 
+#userTable{
+    margin-left: 30px;
+}
 /*profile part*/
 
 #profile{
