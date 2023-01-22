@@ -89,3 +89,39 @@ body{
     border: 1px solid black;
     padding: 10px 10px;
 }
+
+/*profile part*/
+
+#profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profileTitle{
+    font-size: 50px;
+}
+
+
+/*picture part*/
+
+#wrapper{
+
+    width: 50%;
+
+    margin: 100px auto;
+    padding-top: 2%;
+
+    border: 2px solid #dad7d7;
+
+}
+
+#pictureForm{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 2%;
+
+}

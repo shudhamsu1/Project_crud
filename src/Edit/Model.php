@@ -4,11 +4,7 @@ namespace Php\Project\Edit;
 use Php\Project\Includes\Database;
 class Model
 {
-//  public function getUserById($id){
-//    $sql = "Select * FROM users WHERE id=$id";
-//    $dbConnection = new Database();
-//    return $dbConnection->getSelect($sql);
-//  }
+
   public function saveUser($data){ // the data is coming from post from controller
     $id = $_GET['id'];
     $firstName= $data['fname'];
