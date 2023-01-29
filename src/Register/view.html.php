@@ -1,7 +1,8 @@
-<h2>Register Form</h2>
 
 
-<form method="POST" action="">
+<div class="registerContent">
+    <h2 class="registerTitle">Register Form</h2>
+<form method="POST" action="" id="registerForm" >
 
   <label>First Name</label>
   <input name="fname" type="text">
@@ -16,17 +17,17 @@
   <label>Gender:</label>
 <div class="genderForm">
     <div class="gender">
-    <input type="radio" id="male" name="gender" value="M">
+    <input type="radio" id="male" name="gender" value="Male">
     <label for="male">Male</label>
     </div>
 
     <div class="gender">
-        <input type="radio" id="female" name="gender" value="F">
+        <input type="radio" id="female" name="gender" value="Female">
         <label for="female">Female</label>
     </div>
 
     <div class="gender">
-        <input type="radio" id="notsay" name="gender" value="Prefer Not to say">
+        <input type="radio" id="notsay" name="gender" value="Non-Binary">
 
         <label for="notsay">Non-Binary</label>
     </div>
@@ -34,6 +35,9 @@
   <input type="submit" value="Register" name="Register" class="register btn btn-primary">
 </div>
 
-  <a href = "<?php echo 'index.php?module=Login' ?>"> Home </a>
+
 
 </form>
+</div>
+
+

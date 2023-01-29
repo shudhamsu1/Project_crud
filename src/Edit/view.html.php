@@ -8,8 +8,8 @@
 //    exit();
 //}
 ?>
-
-<form method="POST" action="">
+<div class="registerContent" id="editForm">
+<form method="POST" action="" id="registerForm">
 
   <label>First Name</label>
   <input name="fname" type="text" value=" <?php echo $user['first_name'] ?>">
@@ -24,7 +24,7 @@
   <label>Gender:</label>
   <div class="genderForm">
     <div class="gender">
-    <input type="radio" id="male" name="gender" value=" <?php echo $user['gender'] ?>">
+    <input type="radio" id="male" name="gender" value="M" <?php ?>>
     <label for="male">Male</label>
     </div>
 
@@ -43,3 +43,5 @@
 
 </form>
 
+
+</div>

@@ -18,8 +18,11 @@ class Controller
 
     }
     else{
+
       $view = 'src/Login/view.html.php';
       include 'src/Template/template.php';
+
+
     }
 
   }

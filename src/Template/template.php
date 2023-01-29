@@ -1,9 +1,9 @@
-
+<?php $title = "user management" ?>
 
 <html>
 
 <head>
-  <title>User Management</title>
+  <title>  <?php echo $title?></title>
     <style>
         <?php include "style.css" ?>
     </style>
@@ -25,7 +25,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a href= "<?php echo 'index.php?module=Register' ?>"" class="nav-link sideNav fs-1">Register</a>
+                        <a href= "<?php echo 'index.php?module=Login'?>" class="nav-link sideNav fs-1" id="loginnav" >Logout</a>
                     </li>
 
 
@@ -46,7 +46,7 @@ include $view;
  </div>
 
 
-
+<script > <?php include "script.js" ?> </script>
 
 </body>
 <footer class="footer sticky-lg-bottom">

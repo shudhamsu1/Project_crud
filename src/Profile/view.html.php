@@ -6,7 +6,7 @@
     </div >
 
     <div id="profileBody" class="card " style="width: 18rem;  ">
-        <img src="src/PictureUpload/image/<?php echo $user['profile_image']; ?>" class="card-img-top" alt="...">
+        <img src="src/PictureUpload/image/<?php echo $user['profile_image']; ?>" class="card-img-top profileImg" alt="...">
 
         <a href='index.php?module=PictureUpload&id=<?php echo $user['id'];?> ' class="card-link">Upload image</a>
 

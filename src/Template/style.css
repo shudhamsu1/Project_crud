@@ -4,22 +4,63 @@
     flex-direction: column;
     padding-left: 2%
 }
+nav a::after{
+    content:"";
+    width: 0;
+    height: 2px;
+    background: #5ec576;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
 
+}
+
+
+nav a:hover::after{
+    width: 80%;
+}
 
 form{
     display: grid;
-    grid-template-columns: 200px 300px;
+    /*grid-template-columns: 200px 300px;*/
     row-gap: 15px;
     column-gap:15px;
 }
 
+.form-text{
+    font-size: 20px;
+    width: 300px;
+}
 .loginForm{
     padding: 10% 20%;
     display: grid;
-    grid-template-columns: 200px 300px;
-    row-gap: 15px;
-    column-gap:15px;
+    grid-template-columns: 200px 400px;
+    row-gap: 30px;
+    column-gap: 50px;
+
     color:black;
+    font-size:30px;
+}
+
+.register{
+    margin-top: 20px;
+}
+#registerForm{
+    display: grid;
+    grid-template-columns: 200px 300px;
+    font-size: 20px;
+
+}
+
+.registerContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.registerTitle{
+    padding: 2% 5%;
 }
 
 #logoutBtn{
@@ -68,9 +109,7 @@ form input{
     align-items: center;
 }
 
-.register{
-    margin-top: 20px;
-}
+
 
 
 /**{*/
@@ -97,7 +136,7 @@ body{
 }
 
 .admintr:hover{
-    font-size: large;
+
 }
 
 .admintd:hover{
@@ -131,7 +170,10 @@ body{
     font-size: 50px;
 }
 
+.profileImg{
+    /*height:300px;*/
 
+}
 /*picture part*/
 
 #wrapper{
@@ -152,4 +194,12 @@ body{
     align-items: center;
     padding: 2% 2%;
 
+}
+
+#editForm{
+    margin-top: 5%;
+}
+
+.hide-nav{
+    color: red;
 }

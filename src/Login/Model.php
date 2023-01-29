@@ -14,7 +14,14 @@ class Model
     $dbConnection = new Database();
     $data = $dbConnection->getSelect($sql);
 
-    if($data['role'] == 'admin'){
+    if(empty($data)){
+
+      $msg = "Invalid username or password";
+      $view = 'src/Login/view.html.php';
+      include 'src/Template/template.php';
+
+
+    }elseif($data['role'] == 'admin'){
       //render admin page
 //      $adminSession = new Session();
 //      $adminSession->setRole($data['role']);
@@ -27,10 +34,16 @@ class Model
       $userSession->setUserId($data['id']);
 
       header('Location:index.php?module=Profile');
+    }else {
+
+          header('Location: index.php?module=Login');
+          echo "<h5>Would you like to Register </h5>";
+
     }
 
 
-//    header('Location: index.php?module=Profile');
+
+
 
 
   }
